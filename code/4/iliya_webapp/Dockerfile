@@ -1,8 +1,8 @@
 FROM ubuntu:16.04
 MAINTAINER Iliya Strakovich "iliya@strakovich.com"
-RUN apt-get update
-RUN apt-get install -y apache2
-RUN apt-get install -y curl
+RUN apt-get -qq update
+RUN apt-get install -qq -y apache2
+RUN apt-get install -qq -y curl
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2

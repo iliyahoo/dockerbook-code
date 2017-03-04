@@ -1,0 +1,4 @@
+FROM iliyahoo/static_web_apache:v1
+MAINTAINER Iliya Strakovich "iliya@strakovich.com"
+ENV APPLICATION_NAME webapp
+ENV ENVIRONMENT development
